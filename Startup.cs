@@ -13,7 +13,7 @@ namespace hwapp
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.Run(async (context) => { await context.Response.WriteAsync("Hello, world!"); });
+            app.Run(async (context) => { await context.Response.WriteAsync("Hello, world!!"); });
         }
     }
 }
