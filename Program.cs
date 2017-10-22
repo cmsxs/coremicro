@@ -15,7 +15,7 @@ namespace hwapp
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseStartup<Startup>()
-                .UseConfiguration(config)
+                .UseUrls("http://0.0.0.0:8080")
                 .Build();
             
             host.Run();
