@@ -4,24 +4,43 @@ build:
   steps:
     - script:
         name: restore
+        cwd: src/cmsjr.TeamService
         code: |
           dotnet restore
     - script:
         name: build
+        cwd: src/cmsjr.TeamService
         code: |
           dotnet build
     - script:
         name: publish
+        cwd: src/cmsjr.TeamService
         code: |
           dotnet publish -o publish
     - script:
+        name: test-restore
+        cwd: test/cmsjr.TeamService.Tests
+        code: |
+          dotnet restore
+    - script:
+        name: test-build
+        cwd: test/cmsjr.TeamService.Tests
+        code: |
+          dotnet build
+    - script: 
+        name: test-run
+        cwd: test/cmsjr.TeamService.Tests
+        code: |
+          dotnet test
+    - script:
         name: copy binary
+        cwd: src/cmsjr.TeamService
         code: |
           cp -r . $WERCKER_OUTPUT_DIR/app
-          cd $WERCKER_OUTPUT_DIR/app
 deploy:
   steps:
     - internal/docker-push:
+      cwd: $WERCKER_OUTPUT_DIR/app
       username: $USERNAME
       password: $PASSWORD
       repository: cmsxs/coremicro

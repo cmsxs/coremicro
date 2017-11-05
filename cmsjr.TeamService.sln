@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsjr.TeamService", "src\cmsjr.TeamService\cmsjr.TeamService.csproj", "{A1E3718F-2969-45B2-9EB2-257D4982AFF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsjr.TeamService.Tests", "test\cmsjr.TeamService.Tests\cmsjr.TeamService.Tests.csproj", "{3F1B5072-8D4D-4D0F-8534-C46874C44512}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1E3718F-2969-45B2-9EB2-257D4982AFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E3718F-2969-45B2-9EB2-257D4982AFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E3718F-2969-45B2-9EB2-257D4982AFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E3718F-2969-45B2-9EB2-257D4982AFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
