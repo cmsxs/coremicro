@@ -14,13 +14,18 @@ namespace cmsjr.TeamService
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
-        }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            var config = new ConfigurationBuilder().AddCommandLine(args).Build();
+            
+            var host = WebHost.CreateDefaultBuilder(args)
+                .UseConfiguration(config)
                 .ConfigureServices(services =>{})
                 .UseStartup<Startup>()
                 .Build();
+            
+            host.Run();
+        }
+
+        
+           
     }
 }
