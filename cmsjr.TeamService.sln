@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsjr.TeamService", "src\cm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsjr.TeamService.Tests", "test\cmsjr.TeamService.Tests\cmsjr.TeamService.Tests.csproj", "{3F1B5072-8D4D-4D0F-8534-C46874C44512}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmsjr.TeamService.Tests.Integration", "test\cmsjr.TeamService.Tests.Integration\cmsjr.TeamService.Tests.Integration.csproj", "{208278DD-66B4-4CBC-9A1D-F5885B673AF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1B5072-8D4D-4D0F-8534-C46874C44512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{208278DD-66B4-4CBC-9A1D-F5885B673AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{208278DD-66B4-4CBC-9A1D-F5885B673AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{208278DD-66B4-4CBC-9A1D-F5885B673AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{208278DD-66B4-4CBC-9A1D-F5885B673AF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
