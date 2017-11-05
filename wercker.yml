@@ -36,7 +36,7 @@ build:
         name: copy binary
         cwd: src/cmsjr.TeamService
         code: |
-          cp -r . $WERCKER_OUTPUT_DIR/app
+          cp -r . $WERCKER_OUTPUT_DIR/appls
 deploy:
   steps:
     - internal/docker-push:
