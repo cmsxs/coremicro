@@ -15,10 +15,12 @@ namespace cmsjr.TeamService
         public static void Main(string[] args)
         {
             var config = new ConfigurationBuilder().AddCommandLine(args).Build();
-            
+            var argParts = args[0].Split("=");
+    
             var host = WebHost.CreateDefaultBuilder(args)
                 
                 .UseKestrel()
+                .UseUrls(argParts[1])
                 .UseStartup<Startup>()
                 .ConfigureServices(services =>{})
                 .UseConfiguration(config)
